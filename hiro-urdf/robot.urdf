@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <!-- Generated using onshape-to-robot -->
-<robot name="hiro-urdf">
+<!-- Onshape https://cad.onshape.com/documents/821537de265f690cd6a7463f/w/e6dd5c2cd3f02f2c138b8ab4/e/dddb74688ea578ce99794d9b -->
+<robot name="hiro-urdf3">
   <!-- Link torso_kidsize25 -->
   <link name="torso_kidsize25">
     <inertial>
@@ -309,7 +310,7 @@
   <!-- Link neck -->
   <link name="neck">
     <inertial>
-      <origin xyz="2.39298e-07 9.45637e-18 0.00879985" rpy="0 0 0"/>
+      <origin xyz="2.39298e-07 9.98172e-18 0.00879985" rpy="0 0 0"/>
       <mass value="0.0128985"/>
       <inertia ixx="5.01235e-06" ixy="2.63324e-11" ixz="-9.38605e-13" iyy="2.39998e-06" iyz="1.05879e-21" izz="4.13467e-06"/>
     </inertial>
@@ -322,21 +323,21 @@
     </collision>
     <!-- Part carbon_2mm_neck_side_plate -->
     <collision>
-      <origin xyz="5e-07 -0.0205 0.02" rpy="1.5708 -2.36658e-29 4.10658e-30"/>
+      <origin xyz="5e-07 -0.0205 0.02" rpy="1.5708 -2.36658e-29 4.27969e-30"/>
       <geometry>
         <mesh filename="package://assets/carbon_2mm_neck_side_plate.stl"/>
       </geometry>
     </collision>
     <!-- Part carbon_2mm_neck_side_plate_2 -->
     <collision>
-      <origin xyz="-2.77556e-17 0.0225 0.02" rpy="1.5708 -4.73317e-30 -1.00929e-29"/>
+      <origin xyz="-2.77556e-17 0.0225 0.02" rpy="1.5708 -4.73317e-30 -1.0266e-29"/>
       <geometry>
         <mesh filename="package://assets/carbon_2mm_neck_side_plate.stl"/>
       </geometry>
     </collision>
     <!-- Part neck_parts -->
     <visual>
-      <origin xyz="2.39298e-07 1.278e-17 0.00879985" rpy="-1.12084e-14 -2.15281e-13 -1.5708"/>
+      <origin xyz="2.39298e-07 1.27529e-17 0.00879985" rpy="-1.12084e-14 -2.15281e-13 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/merged/neck_visual.stl"/>
       </geometry>
@@ -375,7 +376,7 @@
     </collision>
     <!-- Part mx_28_4 -->
     <collision>
-      <origin xyz="0.0079054 0.0653899 0.0287863" rpy="1.5708 -0 0"/>
+      <origin xyz="0.0079054 0.0653899 0.0287863" rpy="1.5708 2.68506e-30 -4.03675e-31"/>
       <geometry>
         <mesh filename="package://assets/mx_28.stl"/>
       </geometry>
@@ -432,7 +433,7 @@
     </collision>
     <!-- Part almi2_view_6_7__arm_bracket_parts -->
     <visual>
-      <origin xyz="-9.71445e-17 -0.00223841 0.00829596" rpy="-1.5708 1.5708 0"/>
+      <origin xyz="-1.00614e-16 -0.00223841 0.00829596" rpy="-1.5708 1.5708 0"/>
       <geometry>
         <mesh filename="package://assets/merged/almi2_view_6_7__arm_bracket_visual.stl"/>
       </geometry>
@@ -464,7 +465,7 @@
     </collision>
     <!-- Part almi2_view_13__14__arm -->
     <collision>
-      <origin xyz="-0.0819971 0.058605 0.0256" rpy="3.14159 1.11022e-16 -5.90699e-27"/>
+      <origin xyz="-0.0819971 0.058605 0.0256" rpy="3.14159 1.11022e-16 -5.91311e-27"/>
       <geometry>
         <mesh filename="package://assets/almi2_view_13__14__arm.stl"/>
       </geometry>
@@ -718,9 +719,9 @@
   <!-- Link foot_right_1 -->
   <link name="foot_right_1">
     <inertial>
-      <origin xyz="-0.000123356 0.0142848 -0.0039917" rpy="0 0 0"/>
-      <mass value="0.288767"/>
-      <inertia ixx="0.000301213" ixy="2.06889e-07" ixz="-7.68993e-07" iyy="0.000261184" iyz="-1.25332e-05" izz="0.000110844"/>
+      <origin xyz="-0.000121825 0.0144674 -0.00397654" rpy="0 0 0"/>
+      <mass value="0.292396"/>
+      <inertia ixx="0.000302471" ixy="1.95767e-07" ixz="-7.69534e-07" iyy="0.00026243" iyz="-1.25976e-05" izz="0.000113113"/>
     </inertial>
     <!-- Part mx_64t_2 -->
     <collision>
@@ -731,7 +732,7 @@
     </collision>
     <!-- Part almi_2mm_fr05_f101k_set -->
     <collision>
-      <origin xyz="-1.38778e-17 5.37764e-17 -0.04958" rpy="1.5708 9.11923e-28 -1.5708"/>
+      <origin xyz="-1.38778e-17 5.37764e-17 -0.04958" rpy="1.5708 9.12541e-28 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/almi_2mm_fr05_f101k_set.stl"/>
       </geometry>
@@ -752,7 +753,7 @@
     </collision>
     <!-- Part fr05_f101k_set -->
     <collision>
-      <origin xyz="-2.91434e-16 0 -0.04938" rpy="3.14159 -9.11923e-28 1.5708"/>
+      <origin xyz="-2.91434e-16 0 -0.04938" rpy="3.14159 -9.12541e-28 1.5708"/>
       <geometry>
         <mesh filename="package://assets/fr05_f101k_set.stl"/>
       </geometry>
@@ -766,14 +767,14 @@
     </collision>
     <!-- Part mf128zz_1 -->
     <collision>
-      <origin xyz="-2.77556e-16 1.73472e-18 -0.0516" rpy="-1.5708 9.11923e-28 -1.5708"/>
+      <origin xyz="-2.77556e-16 1.73472e-18 -0.0516" rpy="-1.5708 9.11615e-28 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/mf128zz_1.stl"/>
       </geometry>
     </collision>
     <!-- Part rx64_cap_1 -->
     <collision>
-      <origin xyz="-2.56739e-16 -1.04083e-17 -0.05508" rpy="-3.14159 8.99301e-28 -1.5708"/>
+      <origin xyz="-2.56739e-16 -1.04083e-17 -0.05508" rpy="-3.14159 8.99919e-28 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/rx64_cap_1.stl"/>
       </geometry>
@@ -808,7 +809,7 @@
     </collision>
     <!-- Part foot_right_1_parts -->
     <visual>
-      <origin xyz="-0.000123356 0.0142848 -0.0039917" rpy="1.5708 -5.82295e-15 -9.22685e-14"/>
+      <origin xyz="-0.000121825 0.0144674 -0.00397654" rpy="1.5708 -5.82295e-15 -9.22685e-14"/>
       <geometry>
         <mesh filename="package://assets/merged/foot_right_1_visual.stl"/>
       </geometry>
@@ -820,9 +821,9 @@
   <!-- Link foot_right_2 -->
   <link name="foot_right_2">
     <inertial>
-      <origin xyz="0.00374511 0.0598831 -0.0241672" rpy="0 0 0"/>
-      <mass value="0.13801"/>
-      <inertia ixx="0.000256725" ixy="-1.18271e-05" ixz="-3.44867e-07" iyy="9.86055e-05" iyz="6.82503e-06" izz="0.000188377"/>
+      <origin xyz="0.00189202 0.0890217 -0.0236304" rpy="0 0 0"/>
+      <mass value="0.273181"/>
+      <inertia ixx="0.00054925" ixy="3.23355e-06" ixz="-6.73937e-08" iyy="0.000131243" iyz="8.86444e-07" izz="0.000472641"/>
     </inertial>
     <!-- Part stainless_steel_2mm__femur -->
     <collision>
@@ -882,7 +883,7 @@
     </collision>
     <!-- Part foot_right_2_parts -->
     <visual>
-      <origin xyz="0.00374511 0.0598831 -0.0241672" rpy="1.5708 -1.5708 0"/>
+      <origin xyz="0.00189202 0.0890217 -0.0236304" rpy="1.5708 -1.5708 0"/>
       <geometry>
         <mesh filename="package://assets/merged/foot_right_2_visual.stl"/>
       </geometry>
@@ -900,7 +901,7 @@
     </inertial>
     <!-- Part stainless_steel_2mm_leg_spacer -->
     <collision>
-      <origin xyz="0.024 0.0190814 -0.045" rpy="-9.88536e-30 -2.22045e-16 1.5708"/>
+      <origin xyz="0.024 0.0190814 -0.045" rpy="-9.76083e-30 -2.22045e-16 1.5708"/>
       <geometry>
         <mesh filename="package://assets/stainless_steel_2mm_leg_spacer.stl"/>
       </geometry>
@@ -946,35 +947,35 @@
     </collision>
     <!-- Part fr05_f101k_set_1 -->
     <collision>
-      <origin xyz="0.024 4.58208e-05 0.0235" rpy="1.5708 -2.52435e-29 1.5708"/>
+      <origin xyz="0.024 4.58208e-05 0.0235" rpy="1.5708 -2.04415e-29 1.5708"/>
       <geometry>
         <mesh filename="package://assets/fr05_f101k_set_1.stl"/>
       </geometry>
     </collision>
     <!-- Part almi_2mm_connector_mx64_1 -->
     <collision>
-      <origin xyz="-0.015 0.015 0.0425" rpy="-1.5708 -2.27192e-28 -1.5708"/>
+      <origin xyz="-0.015 0.015 0.0425" rpy="-1.5708 -2.31994e-28 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/almi_2mm_connector_mx64_1.stl"/>
       </geometry>
     </collision>
     <!-- Part almi_2mm_connector_mx64_1_2 -->
     <collision>
-      <origin xyz="-0.015 0.043 0.0045" rpy="1.5708 -2.52435e-29 1.5708"/>
+      <origin xyz="-0.015 0.043 0.0045" rpy="1.5708 -2.04415e-29 1.5708"/>
       <geometry>
         <mesh filename="package://assets/almi_2mm_connector_mx64_1.stl"/>
       </geometry>
     </collision>
     <!-- Part mx_64t_3_2 -->
     <collision>
-      <origin xyz="0 0 0.0235" rpy="3.14159 2.18676e-31 0"/>
+      <origin xyz="0 0 0.0235" rpy="-3.14159 2.18676e-31 7.74535e-31"/>
       <geometry>
         <mesh filename="package://assets/mx_64t_3.stl"/>
       </geometry>
     </collision>
     <!-- Part almi_2mm_fr05_f101k_set_1 -->
     <collision>
-      <origin xyz="0.024 0 0.0235" rpy="3.14159 2.52435e-29 -1.5708"/>
+      <origin xyz="0.024 0 0.0235" rpy="3.14159 2.04415e-29 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/almi_2mm_fr05_f101k_set_1.stl"/>
       </geometry>
@@ -995,7 +996,7 @@
     </collision>
     <!-- Part rx64_cap_2 -->
     <collision>
-      <origin xyz="1.38778e-17 5.55112e-17 0.0467" rpy="3.78653e-29 -2.35922e-16 6.93889e-17"/>
+      <origin xyz="1.38778e-17 5.55112e-17 0.0467" rpy="4.26674e-29 -2.35922e-16 6.93889e-17"/>
       <geometry>
         <mesh filename="package://assets/rx64_cap_2.stl"/>
       </geometry>
@@ -1009,14 +1010,14 @@
     </collision>
     <!-- Part hn05_i101_2_2 -->
     <collision>
-      <origin xyz="0.02994 4.58208e-05 0.0235" rpy="-3.14159 -2.52435e-29 1.5708"/>
+      <origin xyz="0.02994 4.58208e-05 0.0235" rpy="-3.14159 -2.04415e-29 1.5708"/>
       <geometry>
         <mesh filename="package://assets/hn05_i101_2.stl"/>
       </geometry>
     </collision>
     <!-- Part rx64_cap_2_2 -->
     <collision>
-      <origin xyz="0.0297 4.58208e-05 0.0235" rpy="1.5708 -5.04871e-29 1.5708"/>
+      <origin xyz="0.0297 4.58208e-05 0.0235" rpy="1.5708 -4.56851e-29 1.5708"/>
       <geometry>
         <mesh filename="package://assets/rx64_cap_2.stl"/>
       </geometry>
@@ -1201,7 +1202,7 @@
     </collision>
     <!-- Part mf128zz_mir_1 -->
     <collision>
-      <origin xyz="-2.28983e-16 -4.58208e-05 -0.0518" rpy="-1.5708 -4.73317e-30 1.5708"/>
+      <origin xyz="-2.28983e-16 -4.58208e-05 -0.0518" rpy="-1.5708 -5.02953e-30 1.5708"/>
       <geometry>
         <mesh filename="package://assets/mf128zz_mir_1.stl"/>
       </geometry>
@@ -1222,7 +1223,7 @@
     </collision>
     <!-- Part rx64_cap_mir_1_2 -->
     <collision>
-      <origin xyz="-0.0232 -1.73472e-18 -0.02558" rpy="-1.5708 -7.88861e-30 -1.5708"/>
+      <origin xyz="-0.0232 -1.73472e-18 -0.02558" rpy="-1.5708 -7.59225e-30 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/rx64_cap_mir_1.stl"/>
       </geometry>
@@ -1255,9 +1256,9 @@
   <!-- Link foot_left_2 -->
   <link name="foot_left_2">
     <inertial>
-      <origin xyz="0.00374511 -0.0598831 -0.0241672" rpy="0 0 0"/>
-      <mass value="0.13801"/>
-      <inertia ixx="0.000256725" ixy="1.18271e-05" ixz="-3.44867e-07" iyy="9.86055e-05" iyz="-6.82503e-06" izz="0.000188377"/>
+      <origin xyz="0.00189202 -0.0890217 -0.0236304" rpy="0 0 0"/>
+      <mass value="0.273181"/>
+      <inertia ixx="0.00054925" ixy="-3.23354e-06" ixz="-6.73963e-08" iyy="0.000131243" iyz="-8.86436e-07" izz="0.000472641"/>
     </inertial>
     <!-- Part mx_64t_mir -->
     <collision>
@@ -1296,14 +1297,14 @@
     </collision>
     <!-- Part hn05_i101_mir -->
     <collision>
-      <origin xyz="-6.54858e-16 -0.134 -0.04694" rpy="-1.5708 -1.26218e-28 -1.5708"/>
+      <origin xyz="-6.54858e-16 -0.134 -0.04694" rpy="-1.5708 -1.20028e-28 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/hn05_i101_mir.stl"/>
       </geometry>
     </collision>
     <!-- Part rx64_cap_mir -->
     <collision>
-      <origin xyz="-6.21898e-16 -0.134 -0.0467" rpy="-1.11022e-16 -1.13596e-28 -1.5708"/>
+      <origin xyz="-6.21898e-16 -0.134 -0.0467" rpy="-1.11022e-16 -1.1038e-28 -1.5708"/>
       <geometry>
         <mesh filename="package://assets/rx64_cap_mir.stl"/>
       </geometry>
@@ -1317,7 +1318,7 @@
     </collision>
     <!-- Part foot_left_2_parts -->
     <visual>
-      <origin xyz="0.00374511 -0.0598831 -0.0241672" rpy="-1.5708 1.5708 0"/>
+      <origin xyz="0.00189202 -0.0890217 -0.0236304" rpy="-1.5708 1.5708 0"/>
       <geometry>
         <mesh filename="package://assets/merged/foot_left_2_visual.stl"/>
       </geometry>
@@ -1374,7 +1375,7 @@
     </inertial>
     <!-- Part mx_64t_mir_2 -->
     <collision>
-      <origin xyz="-0.04908 0 0.0235" rpy="-2.20881e-29 -1.5708 0"/>
+      <origin xyz="-0.04908 0 0.0235" rpy="-2.60098e-29 -1.5708 0"/>
       <geometry>
         <mesh filename="package://assets/mx_64t_mir_2.stl"/>
       </geometry>
@@ -1395,7 +1396,7 @@
     </collision>
     <!-- Part mx_64t_mir_2_2 -->
     <collision>
-      <origin xyz="0 0 0.0235" rpy="0 1.99604e-31 0"/>
+      <origin xyz="0 0 0.0235" rpy="6.18963e-30 1.99604e-31 -7.66209e-31"/>
       <geometry>
         <mesh filename="package://assets/mx_64t_mir_2.stl"/>
       </geometry>
@@ -1416,21 +1417,21 @@
     </collision>
     <!-- Part hn05_i101_mir_2 -->
     <collision>
-      <origin xyz="5.20417e-18 0 0.04694" rpy="1.5708 9.88465e-31 0"/>
+      <origin xyz="5.20417e-18 0 0.04694" rpy="1.5708 9.88465e-31 -7.66209e-31"/>
       <geometry>
         <mesh filename="package://assets/hn05_i101_mir_2.stl"/>
       </geometry>
     </collision>
     <!-- Part mf128zz_mir_2 -->
     <collision>
-      <origin xyz="2.60209e-17 0 0.04322" rpy="1.5708 1.77733e-30 0"/>
+      <origin xyz="2.60209e-17 0 0.04322" rpy="1.5708 1.77733e-30 -7.66209e-31"/>
       <geometry>
         <mesh filename="package://assets/mf128zz_mir_2.stl"/>
       </geometry>
     </collision>
     <!-- Part rx64_cap_mir_2 -->
     <collision>
-      <origin xyz="1.04083e-17 0 0.0467" rpy="-3.14159 1.99604e-31 0"/>
+      <origin xyz="1.04083e-17 0 0.0467" rpy="-3.14159 1.99604e-31 -7.66209e-31"/>
       <geometry>
         <mesh filename="package://assets/rx64_cap_mir_2.stl"/>
       </geometry>
@@ -1508,7 +1509,7 @@
   </link>
   <!-- Joint from foot_left_4 to foot_left_5 -->
   <joint name="left_ankle_roll" type="revolute">
-    <origin xyz="-0.02558 0 0.0235" rpy="1.89327e-29 1.5708 0"/>
+    <origin xyz="-0.02558 0 0.0235" rpy="1.96989e-29 1.5708 0"/>
     <parent link="foot_left_4"/>
     <child link="foot_left_5"/>
     <axis xyz="0 0 1"/>
