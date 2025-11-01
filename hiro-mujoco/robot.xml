@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
 <!-- Generated using onshape-to-robot -->
-<!-- Onshape https://cad.onshape.com/documents/821537de265f690cd6a7463f/w/e6dd5c2cd3f02f2c138b8ab4/e/dddb74688ea578ce99794d9b -->
 <mujoco model="hiro-mujoco">
   <compiler angle="radian" meshdir="assets" autolimits="true"/>
   <default>
@@ -108,7 +107,7 @@
       <body name="neck" pos="8.67185e-05 -0.0446832 0.184707" quat="0.707107 8.00565e-14 7.21645e-14 0.707107">
         <!-- Joint from torso_kidsize25 to neck -->
         <joint axis="0 0 1" name="neck_yaw" type="hinge" range="-3.141592653589793 3.141592653589793" frictionloss="0.1"/>
-        <inertial pos="2.39298e-07 9.98172e-18 0.00879985" mass="0.0128985" fullinertia="5.01235e-06 2.39998e-06 4.13467e-06 2.63324e-11 -9.38605e-13 1.05879e-21"/>
+        <inertial pos="2.39298e-07 1.20831e-17 0.00879985" mass="0.0128985" fullinertia="5.01235e-06 2.39998e-06 4.13467e-06 2.63324e-11 -9.38605e-13 1.16467e-21"/>
         <!-- Part almi_4mm_neck_bracket -->
         <geom type="mesh" class="collision" pos="0.0128945 -0.0185 0" quat="0.707107 0.707107 0 -2.18424e-31" mesh="almi_4mm_neck_bracket" material="almi_4mm_neck_bracket_material"/>
         <!-- Part carbon_2mm_neck_side_plate -->
@@ -116,7 +115,7 @@
         <!-- Part carbon_2mm_neck_side_plate_2 -->
         <geom type="mesh" class="collision" pos="-2.77556e-17 0.0225 0.02" quat="0.707107 0.707107 -0 3.39385e-31" mesh="carbon_2mm_neck_side_plate" material="carbon_2mm_neck_side_plate_material"/>
         <!-- Part neck_parts -->
-        <geom type="mesh" class="visual" pos="2.39298e-07 1.27529e-17 0.00879985" quat="0.707107 -8.00566e-14 -7.22755e-14 -0.707107" mesh="neck_visual" material="neck_visual_material"/>
+        <geom type="mesh" class="visual" pos="2.39298e-07 1.48807e-17 0.00879985" quat="0.707107 -8.00566e-14 -7.22755e-14 -0.707107" mesh="neck_visual" material="neck_visual_material"/>
         <!-- Link head -->
         <body name="head" pos="5e-07 -0.0205 0.037" quat="0.5 -0.5 -0.5 -0.5">
           <!-- Joint from neck to head -->
@@ -137,42 +136,42 @@
         </body>
       </body>
       <!-- Link almi2_view_6_7__arm_bracket -->
-      <body name="almi2_view_6_7__arm_bracket" pos="-0.0722867 -0.0191838 0.161307" quat="0.5 0.5 -0.5 -0.5">
+      <body name="almi2_view_6_7__arm_bracket" pos="-0.0722867 -0.0191838 0.161307" quat="0.5 -0.5 0.5 -0.5">
         <!-- Joint from torso_kidsize25 to almi2_view_6_7__arm_bracket -->
         <joint axis="0 0 1" name="right_shoulder_pitch" type="hinge" range="-3.141592653589793 3.141592653589793" frictionloss="0.1"/>
-        <inertial pos="-9.36751e-17 -0.00223841 0.00829596" mass="0.0151289" fullinertia="2.57897e-06 5.57377e-06 5.85595e-06 -3.24106e-38 -6.75078e-37 4.04961e-07"/>
+        <inertial pos="-9.36751e-17 0.00223841 -0.00829596" mass="0.0151289" fullinertia="2.57897e-06 5.57377e-06 5.85595e-06 3.24106e-38 6.75078e-37 4.04961e-07"/>
         <!-- Part almi2_view_6_7__arm_bracket -->
-        <geom type="mesh" class="collision" pos="0.0185 0.012 0.002" quat="0.707107 -0.707107 0 2.82962e-32" mesh="almi2_view_6_7__arm_bracket" material="almi2_view_6_7__arm_bracket_material"/>
+        <geom type="mesh" class="collision" pos="0.0185 -0.012 -0.002" quat="0.707107 0.707107 -0 2.82962e-32" mesh="almi2_view_6_7__arm_bracket" material="almi2_view_6_7__arm_bracket_material"/>
         <!-- Part almi2_view_6_7__arm_bracket_parts -->
-        <geom type="mesh" class="visual" pos="-1.00614e-16 -0.00223841 0.00829596" quat="0.5 -0.5 0.5 0.5" mesh="almi2_view_6_7__arm_bracket_visual" material="almi2_view_6_7__arm_bracket_visual_material"/>
+        <geom type="mesh" class="visual" pos="-9.71445e-17 0.00223841 -0.00829596" quat="0.5 0.5 -0.5 0.5" mesh="almi2_view_6_7__arm_bracket_visual" material="almi2_view_6_7__arm_bracket_visual_material"/>
         <!-- Link right_upperhand -->
-        <body name="right_upperhand" pos="0.0205 -0.0147498 0.0268034" quat="0.5 0.5 -0.5 -0.5">
+        <body name="right_upperhand" pos="0.0205 0.0147498 -0.0268034" quat="0.5 0.5 0.5 0.5">
           <!-- Joint from almi2_view_6_7__arm_bracket to right_upperhand -->
-          <joint axis="0 0 1" name="right_shoulder_roll" type="hinge" range="-2.356194490192345 0.7853981633974483" frictionloss="0.1"/>
-          <inertial pos="-4.16556e-05 0.0497057 0.0229115" mass="0.178" fullinertia="0.000293103 3.4849e-05 0.00029267 7.35413e-07 2.0111e-08 -1.67161e-05"/>
+          <joint axis="0 0 1" name="right_shoulder_roll" type="hinge" range="-0.7853981633974483 2.356194490192345" frictionloss="0.1"/>
+          <inertial pos="-4.16556e-05 -0.0497057 -0.0229115" mass="0.178" fullinertia="0.000293103 3.4849e-05 0.00029267 -7.35413e-07 -2.0111e-08 -1.67161e-05"/>
           <!-- Part mx_28_5 -->
-          <geom type="mesh" class="collision" pos="0.00818918 0.0341201 0.0335054" quat="0.5 -0.5 -0.5 -0.5" mesh="mx_28" material="mx_28_material"/>
+          <geom type="mesh" class="collision" pos="0.00818918 -0.0341201 -0.0335054" quat="0.5 0.5 0.5 -0.5" mesh="mx_28" material="mx_28_material"/>
           <!-- Part mx_28_6 -->
-          <geom type="mesh" class="collision" pos="0.0079054 0.0653899 0.0287863" quat="0.707107 0.707107 -0 -0" mesh="mx_28" material="mx_28_material"/>
+          <geom type="mesh" class="collision" pos="0.0079054 -0.0653899 -0.0287863" quat="0.707107 -0.707107 0 0" mesh="mx_28" material="mx_28_material"/>
           <!-- Part almi2_view_13__14__arm -->
-          <geom type="mesh" class="collision" pos="-0.0819971 0.058605 0.0256" quat="2.77556e-17 1 -2.77556e-17 -2.77556e-17" mesh="almi2_view_13__14__arm" material="almi2_view_13__14__arm_material"/>
+          <geom type="mesh" class="collision" pos="-0.0819971 -0.058605 -0.0256" quat="1 -0 -1.11022e-16 1.94289e-16" mesh="almi2_view_13__14__arm" material="almi2_view_13__14__arm_material"/>
           <!-- Part right_upperhand_parts -->
-          <geom type="mesh" class="visual" pos="-4.16556e-05 0.0497057 0.0229115" quat="0.5 0.5 -0.5 -0.5" mesh="right_upperhand_visual" material="right_upperhand_visual_material"/>
+          <geom type="mesh" class="visual" pos="-4.16556e-05 -0.0497057 -0.0229115" quat="0.5 -0.5 -0.5 0.5" mesh="right_upperhand_visual" material="right_upperhand_visual_material"/>
           <!-- Link right_lowerhand -->
-          <body name="right_lowerhand" pos="-0.0205971 0.09951 0.0256" quat="0.707107 -2.16914e-14 -0.707107 2.16131e-14">
+          <body name="right_lowerhand" pos="-0.0205971 -0.09951 -0.0256" quat="0.707107 -2.16914e-14 0.707107 -2.16131e-14">
             <!-- Joint from right_upperhand to right_lowerhand -->
             <joint axis="0 0 1" name="right_elbow" type="hinge" range="-2.356194490192345 2.356194490192345" frictionloss="0.1"/>
-            <inertial pos="-0.00130389 0.103918 -0.0103596" mass="0.149258" fullinertia="0.000225269 5.61474e-05 0.000240431 7.02224e-06 1.20544e-07 -3.26703e-05"/>
+            <inertial pos="-0.00130389 -0.103918 0.0103596" mass="0.149258" fullinertia="0.000225269 5.61474e-05 0.000240431 -7.02224e-06 -1.20544e-07 -3.26703e-05"/>
             <!-- Part almi_4_5mm_connector_lower_arm_kidsize -->
-            <geom type="mesh" class="collision" pos="0.00225 0.0405 0" quat="1.17506e-29 3.92523e-17 -0.707107 0.707107" mesh="almi_4_5mm_connector_lower_arm_kidsize" material="almi_4_5mm_connector_lower_arm_kidsize_material"/>
+            <geom type="mesh" class="collision" pos="0.00225 -0.0405 0" quat="3.92523e-17 -0 0.707107 0.707107" mesh="almi_4_5mm_connector_lower_arm_kidsize" material="almi_4_5mm_connector_lower_arm_kidsize_material"/>
             <!-- Part carbon_2mm_arm_kidsize_1 -->
-            <geom type="mesh" class="collision" pos="0 0 0" quat="0.5 -0.5 -0.5 -0.5" mesh="carbon_2mm_arm_kidsize_1" material="carbon_2mm_arm_kidsize_1_material"/>
+            <geom type="mesh" class="collision" pos="0 0 0" quat="0.5 0.5 0.5 -0.5" mesh="carbon_2mm_arm_kidsize_1" material="carbon_2mm_arm_kidsize_1_material"/>
             <!-- Part tpu_arm_kidsize_telapak -->
-            <geom type="mesh" class="collision" pos="2.60209e-17 0.14 -0.0728" quat="0.707107 -0.707107 -0 3.92523e-17" mesh="tpu_arm_kidsize_telapak" material="tpu_arm_kidsize_telapak_material"/>
+            <geom type="mesh" class="collision" pos="2.60209e-17 -0.14 0.0728" quat="0.707107 0.707107 0 1.04478e-27" mesh="tpu_arm_kidsize_telapak" material="tpu_arm_kidsize_telapak_material"/>
             <!-- Part carbon_2mm_arm_kidsize_2 -->
-            <geom type="mesh" class="collision" pos="2.94903e-17 -8.32667e-17 -0.043" quat="3.92523e-17 -0.707107 0 -0.707107" mesh="carbon_2mm_arm_kidsize_2" material="carbon_2mm_arm_kidsize_2_material"/>
+            <geom type="mesh" class="collision" pos="2.94903e-17 8.32667e-17 0.043" quat="0.707107 -0 0.707107 8.07794e-28" mesh="carbon_2mm_arm_kidsize_2" material="carbon_2mm_arm_kidsize_2_material"/>
             <!-- Part right_lowerhand_parts -->
-            <geom type="mesh" class="visual" pos="-0.00130389 0.103918 -0.0103596" quat="0.707107 -3.36753e-14 -2.57572e-14 -0.707107" mesh="right_lowerhand_visual" material="right_lowerhand_visual_material"/>
+            <geom type="mesh" class="visual" pos="-0.00130389 -0.103918 0.0103596" quat="3.36358e-14 0.707107 0.707107 -2.59556e-14" mesh="right_lowerhand_visual" material="right_lowerhand_visual_material"/>
           </body>
         </body>
       </body>
@@ -186,20 +185,20 @@
         <!-- Part almi2_view_6_7__arm_bracket_2_parts -->
         <geom type="mesh" class="visual" pos="-1.04083e-16 -0.00223841 0.00829596" quat="0.5 -0.5 -0.5 -0.5" mesh="almi2_view_6_7__arm_bracket_2_visual" material="almi2_view_6_7__arm_bracket_2_visual_material"/>
         <!-- Link left_upperhand -->
-        <body name="left_upperhand" pos="-0.0205 -0.0147498 0.0268034" quat="0.707107 -0 0.707107 -0">
+        <body name="left_upperhand" pos="-0.0205 -0.0147498 0.0268034" quat="0 -0.707107 0 0.707107">
           <!-- Joint from almi2_view_6_7__arm_bracket_2 to left_upperhand -->
-          <joint axis="0 0 1" name="left_shoulder_roll" type="hinge" range="-0.7853981633974483 2.356194490192345" frictionloss="0.1"/>
-          <inertial pos="-0.0497057 4.16564e-05 0.0182021" mass="0.178" fullinertia="3.47766e-05 0.00029303 0.00029267 7.35406e-07 -1.52286e-05 1.94701e-08"/>
+          <joint axis="0 0 1" name="left_shoulder_roll" type="hinge" range="-2.356194490192345 0.7853981633974483" frictionloss="0.1"/>
+          <inertial pos="-0.0497057 -4.16564e-05 -0.0182021" mass="0.178" fullinertia="3.47766e-05 0.00029303 0.00029267 -7.35406e-07 1.52286e-05 1.94701e-08"/>
           <!-- Part mx_28_7 -->
-          <geom type="mesh" class="collision" pos="-0.0341201 -0.00818918 0.0076946" quat="4.20392e-14 -0.707107 4.20775e-14 0.707107" mesh="mx_28" material="mx_28_material"/>
+          <geom type="mesh" class="collision" pos="-0.0341201 0.00818918 -0.0076946" quat="0.707107 4.20392e-14 -0.707107 4.20392e-14" mesh="mx_28" material="mx_28_material"/>
           <!-- Part almi2_view_13__14__arm_2 -->
-          <geom type="mesh" class="collision" pos="-0.058605 0.0819971 0.0156" quat="0.707107 -1.40655e-16 2.22045e-16 -0.707107" mesh="almi2_view_13__14__arm" material="almi2_view_13__14__arm_material"/>
+          <geom type="mesh" class="collision" pos="-0.058605 -0.0819971 -0.0156" quat="4.27813e-17 -0.707107 -0.707107 9.04703e-17" mesh="almi2_view_13__14__arm" material="almi2_view_13__14__arm_material"/>
           <!-- Part mx_28_8 -->
-          <geom type="mesh" class="collision" pos="-0.0653899 0.0079054 0.0287863" quat="0.5 0.5 0.5 0.5" mesh="mx_28" material="mx_28_material"/>
+          <geom type="mesh" class="collision" pos="-0.0653899 -0.0079054 -0.0287863" quat="0.5 -0.5 0.5 -0.5" mesh="mx_28" material="mx_28_material"/>
           <!-- Part left_upperhand_parts -->
-          <geom type="mesh" class="visual" pos="-0.0497057 4.16564e-05 0.0182021" quat="7.38732e-14 7.83537e-14 0.707107 0.707107" mesh="left_upperhand_visual" material="left_upperhand_visual_material"/>
+          <geom type="mesh" class="visual" pos="-0.0497057 -4.16564e-05 -0.0182021" quat="7.83537e-14 -7.38732e-14 0.707107 -0.707107" mesh="left_upperhand_visual" material="left_upperhand_visual_material"/>
           <!-- Link left_lowerhand -->
-          <body name="left_lowerhand" pos="-0.09951 0.0205971 0.0156" quat="0.5 -0.5 0.5 0.5">
+          <body name="left_lowerhand" pos="-0.09951 -0.0205971 -0.0156" quat="0.5 0.5 -0.5 0.5">
             <!-- Joint from left_upperhand to left_lowerhand -->
             <joint axis="0 0 1" name="left_elbow" type="hinge" range="-2.356194490192345 2.356194490192345" frictionloss="0.1"/>
             <inertial pos="-0.00130389 0.103918 -0.0103596" mass="0.149258" fullinertia="0.000225269 5.61474e-05 0.000240431 7.02224e-06 1.20544e-07 -3.26703e-05"/>
@@ -217,47 +216,47 @@
         </body>
       </body>
       <!-- Link stainless_steel_2mm_upper_leg_bracket -->
-      <body name="stainless_steel_2mm_upper_leg_bracket" pos="-0.0495 -0.0149172 0.0210065" quat="7.20722e-14 0.707107 -0.707107 -8.01547e-14">
+      <body name="stainless_steel_2mm_upper_leg_bracket" pos="-0.0495 -0.0149172 0.0210065" quat="0.707107 -7.20722e-14 8.00471e-14 -0.707107">
         <!-- Joint from torso_kidsize25 to stainless_steel_2mm_upper_leg_bracket -->
-        <joint axis="0 0 1" name="right_hip_yaw" type="hinge" range="-1.5707963267948966 0.7853981633974483" frictionloss="0.1"/>
-        <inertial pos="-0.00421162 1.80642e-07 0.00839045" mass="0.0521561" fullinertia="1.13163e-05 2.97089e-05 2.98236e-05 2.66522e-10 2.03733e-07 3.66542e-11"/>
+        <joint axis="0 0 1" name="right_hip_yaw" type="hinge" range="-0.7853981633974483 1.5707963267948966" frictionloss="0.1"/>
+        <inertial pos="-0.00421162 -1.80642e-07 -0.00839045" mass="0.0521561" fullinertia="1.13163e-05 2.97089e-05 2.98236e-05 -2.66522e-10 -2.03733e-07 3.66542e-11"/>
         <!-- Part stainless_steel_2mm_upper_leg_bracket -->
-        <geom type="mesh" class="collision" pos="-0.03298 -0.016 0" quat="1 0 0 0" mesh="stainless_steel_2mm_upper_leg_bracket" material="stainless_steel_2mm_upper_leg_bracket_material"/>
+        <geom type="mesh" class="collision" pos="-0.03298 0.016 0" quat="0 1 0 0" mesh="stainless_steel_2mm_upper_leg_bracket" material="stainless_steel_2mm_upper_leg_bracket_material"/>
         <!-- Part stainless_steel_2mm_upper_leg_bracket_parts -->
-        <geom type="mesh" class="visual" pos="-0.00421162 1.80642e-07 0.00839045" quat="7.20722e-14 -0.707107 0.707107 8.01547e-14" mesh="stainless_steel_2mm_upper_leg_bracket_visual" material="stainless_steel_2mm_upper_leg_bracket_visual_material"/>
+        <geom type="mesh" class="visual" pos="-0.00421162 -1.80642e-07 -0.00839045" quat="0.707107 7.20722e-14 -8.00471e-14 0.707107" mesh="stainless_steel_2mm_upper_leg_bracket_visual" material="stainless_steel_2mm_upper_leg_bracket_visual_material"/>
         <!-- Link foot_right_1 -->
-        <body name="foot_right_1" pos="-0.0335 -3.55965e-14 0.032" quat="0.5 0.5 -0.5 -0.5">
+        <body name="foot_right_1" pos="-0.0335 3.55965e-14 -0.032" quat="0.5 0.5 0.5 0.5">
           <!-- Joint from stainless_steel_2mm_upper_leg_bracket to foot_right_1 -->
           <joint axis="0 0 1" name="right_hip_roll" type="hinge" range="-0.7853981633974483 1.5707963267948966" frictionloss="0.1"/>
-          <inertial pos="-0.000121825 0.0144674 -0.00397654" mass="0.292396" fullinertia="0.000302471 0.00026243 0.000113113 1.95767e-07 -7.69534e-07 -1.25976e-05"/>
+          <inertial pos="-0.000121825 -0.0144674 0.00397654" mass="0.292396" fullinertia="0.000302471 0.00026243 0.000113113 -1.95767e-07 7.69534e-07 -1.25976e-05"/>
           <!-- Part mx_64t_2 -->
-          <geom type="mesh" class="collision" pos="6.93889e-18 0 0.0235" quat="0 1 0 0" mesh="mx_64t_2" material="mx_64t_2_material"/>
+          <geom type="mesh" class="collision" pos="6.93889e-18 0 -0.0235" quat="1 0 0 0" mesh="mx_64t_2" material="mx_64t_2_material"/>
           <!-- Part almi_2mm_fr05_f101k_set -->
-          <geom type="mesh" class="collision" pos="-1.38778e-17 5.37764e-17 -0.04958" quat="0.5 0.5 -0.5 -0.5" mesh="almi_2mm_fr05_f101k_set" material="almi_2mm_fr05_f101k_set_material"/>
+          <geom type="mesh" class="collision" pos="-1.38778e-17 -5.37764e-17 0.04958" quat="0.5 -0.5 -0.5 0.5" mesh="almi_2mm_fr05_f101k_set" material="almi_2mm_fr05_f101k_set_material"/>
           <!-- Part almi_2mm_connector_mx64 -->
-          <geom type="mesh" class="collision" pos="-0.019 0.043 -0.01058" quat="1.51865e-27 0.707107 0.707107 -2.26763e-28" mesh="almi_2mm_connector_mx64" material="almi_2mm_connector_mx64_material"/>
+          <geom type="mesh" class="collision" pos="-0.019 -0.043 0.01058" quat="0.707107 0 0 -0.707107" mesh="almi_2mm_connector_mx64" material="almi_2mm_connector_mx64_material"/>
           <!-- Part almi_2mm_connector_mx64_2 -->
-          <geom type="mesh" class="collision" pos="0.019 0.015 -0.01058" quat="1.96262e-17 0.707107 -0.707107 1.96262e-17" mesh="almi_2mm_connector_mx64" material="almi_2mm_connector_mx64_material"/>
+          <geom type="mesh" class="collision" pos="0.019 -0.015 0.01058" quat="0.707107 -1.96262e-17 0 0.707107" mesh="almi_2mm_connector_mx64" material="almi_2mm_connector_mx64_material"/>
           <!-- Part fr05_f101k_set -->
-          <geom type="mesh" class="collision" pos="-2.91434e-16 0 -0.04938" quat="7.85046e-17 0.707107 0.707107 7.85046e-17" mesh="fr05_f101k_set" material="fr05_f101k_set_material"/>
+          <geom type="mesh" class="collision" pos="-2.91434e-16 0 0.04938" quat="0.707107 -1.11022e-16 4.44089e-16 -0.707107" mesh="fr05_f101k_set" material="fr05_f101k_set_material"/>
           <!-- Part mx_64t_2_2 -->
-          <geom type="mesh" class="collision" pos="1.38778e-17 5.0307e-17 -0.02558" quat="3.92523e-17 -0.707107 0 -0.707107" mesh="mx_64t_2" material="mx_64t_2_material"/>
+          <geom type="mesh" class="collision" pos="1.38778e-17 -5.0307e-17 0.02558" quat="0.707107 3.92523e-17 0.707107 -0" mesh="mx_64t_2" material="mx_64t_2_material"/>
           <!-- Part mf128zz_1 -->
-          <geom type="mesh" class="collision" pos="-2.77556e-16 1.73472e-18 -0.0516" quat="0.5 -0.5 0.5 -0.5" mesh="mf128zz_1" material="mf128zz_1_material"/>
+          <geom type="mesh" class="collision" pos="-2.77556e-16 -1.73472e-18 0.0516" quat="0.5 0.5 0.5 0.5" mesh="mf128zz_1" material="mf128zz_1_material"/>
           <!-- Part rx64_cap_1 -->
-          <geom type="mesh" class="collision" pos="-2.56739e-16 -1.04083e-17 -0.05508" quat="1.96262e-16 -0.707107 0.707107 3.92523e-17" mesh="rx64_cap_1" material="rx64_cap_1_material"/>
+          <geom type="mesh" class="collision" pos="-2.56739e-16 1.04083e-17 0.05508" quat="0.707107 1.96262e-16 1.11022e-16 0.707107" mesh="rx64_cap_1" material="rx64_cap_1_material"/>
           <!-- Part hn05_i101_1 -->
-          <geom type="mesh" class="collision" pos="-2.56739e-16 1.56125e-17 -0.05532" quat="0.5 -0.5 0.5 -0.5" mesh="hn05_i101_1" material="hn05_i101_1_material"/>
+          <geom type="mesh" class="collision" pos="-2.56739e-16 -1.56125e-17 0.05532" quat="0.5 0.5 0.5 0.5" mesh="hn05_i101_1" material="hn05_i101_1_material"/>
           <!-- Part rx64_cap_1_2 -->
-          <geom type="mesh" class="collision" pos="-0.0232 5.37764e-17 -0.02558" quat="0.707107 0 -0.707107 -1.11022e-16" mesh="rx64_cap_1" material="rx64_cap_1_material"/>
+          <geom type="mesh" class="collision" pos="-0.0232 -5.37764e-17 0.02558" quat="1.96262e-17 0.707107 -0 -0.707107" mesh="rx64_cap_1" material="rx64_cap_1_material"/>
           <!-- Part hn05_i101_1_2 -->
-          <geom type="mesh" class="collision" pos="-0.02344 4.85723e-17 -0.02558" quat="0.5 0.5 -0.5 0.5" mesh="hn05_i101_1" material="hn05_i101_1_material"/>
+          <geom type="mesh" class="collision" pos="-0.02344 -4.85723e-17 0.02558" quat="0.5 -0.5 0.5 0.5" mesh="hn05_i101_1" material="hn05_i101_1_material"/>
           <!-- Part mf128zz_1_2 -->
-          <geom type="mesh" class="collision" pos="-0.01972 3.81639e-17 -0.02558" quat="0.5 0.5 -0.5 0.5" mesh="mf128zz_1" material="mf128zz_1_material"/>
+          <geom type="mesh" class="collision" pos="-0.01972 -3.81639e-17 0.02558" quat="0.5 -0.5 0.5 0.5" mesh="mf128zz_1" material="mf128zz_1_material"/>
           <!-- Part foot_right_1_parts -->
-          <geom type="mesh" class="visual" pos="-0.000121825 0.0144674 -0.00397654" quat="0.707107 0.707107 -3.4861e-14 -3.05631e-14" mesh="foot_right_1_visual" material="foot_right_1_visual_material"/>
+          <geom type="mesh" class="visual" pos="-0.000121825 -0.0144674 0.00397654" quat="0.707107 -0.707107 -3.06422e-14 3.46806e-14" mesh="foot_right_1_visual" material="foot_right_1_visual_material"/>
           <!-- Link foot_right_2 -->
-          <body name="foot_right_2" pos="0.0235 4.68375e-17 -0.02558" quat="0.707107 -8.46623e-15 0.707107 -8.46616e-15">
+          <body name="foot_right_2" pos="0.0235 -4.68375e-17 0.02558" quat="8.46623e-15 0.707107 8.43769e-15 0.707107">
             <!-- Joint from foot_right_1 to foot_right_2 -->
             <joint axis="0 0 1" name="right_hip_pitch" type="hinge" range="-1.9634954084936207 1.1780972450961724" frictionloss="0.1"/>
             <inertial pos="0.00189202 0.0890217 -0.0236304" mass="0.273181" fullinertia="0.00054925 0.000131243 0.000472641 3.23355e-06 -6.73937e-08 8.86444e-07"/>
@@ -293,38 +292,38 @@
               <!-- Part foot_right_3_parts -->
               <geom type="mesh" class="visual" pos="0.00350206 0.0535427 -0.0235017" quat="0.5 0.5 -0.5 0.5" mesh="foot_right_3_visual" material="foot_right_3_visual_material"/>
               <!-- Link foot_right_4 -->
-              <body name="foot_right_4" pos="-1.10155e-16 0.111702 2.08167e-17" quat="6.11539e-29 -1 3.15691e-14 -3.49979e-30">
+              <body name="foot_right_4" pos="-1.10155e-16 0.111702 2.08167e-17" quat="1 0 2.22045e-16 -3.1572e-14">
                 <!-- Joint from foot_right_3 to foot_right_4 -->
                 <joint axis="0 0 1" name="right_ankle_pitch" type="hinge" range="-1.5707963267948966 1.5707963267948966" frictionloss="0.1"/>
-                <inertial pos="-0.0215978 0.0144558 0.0236219" mass="0.292143" fullinertia="0.000112946 0.000262476 0.000302507 1.25976e-05 -7.69336e-07 -2.05088e-07"/>
+                <inertial pos="-0.0215978 -0.0144558 -0.0236219" mass="0.292143" fullinertia="0.000112946 0.000262476 0.000302507 -1.25976e-05 7.69336e-07 -2.05088e-07"/>
                 <!-- Part mx_64t_3 -->
-                <geom type="mesh" class="collision" pos="-0.04908 0 0.0235" quat="1.46405e-27 -0.707107 -0 -0.707107" mesh="mx_64t_3" material="mx_64t_3_material"/>
+                <geom type="mesh" class="collision" pos="-0.04908 0 -0.0235" quat="0.707107 1.69407e-21 0.707107 -0" mesh="mx_64t_3" material="mx_64t_3_material"/>
                 <!-- Part fr05_f101k_set_1 -->
-                <geom type="mesh" class="collision" pos="0.024 4.58208e-05 0.0235" quat="0.5 0.5 0.5 0.5" mesh="fr05_f101k_set_1" material="fr05_f101k_set_1_material"/>
+                <geom type="mesh" class="collision" pos="0.024 -4.58208e-05 -0.0235" quat="0.5 -0.5 0.5 -0.5" mesh="fr05_f101k_set_1" material="fr05_f101k_set_1_material"/>
                 <!-- Part almi_2mm_connector_mx64_1 -->
-                <geom type="mesh" class="collision" pos="-0.015 0.015 0.0425" quat="0.5 -0.5 0.5 -0.5" mesh="almi_2mm_connector_mx64_1" material="almi_2mm_connector_mx64_1_material"/>
+                <geom type="mesh" class="collision" pos="-0.015 -0.015 -0.0425" quat="0.5 0.5 0.5 0.5" mesh="almi_2mm_connector_mx64_1" material="almi_2mm_connector_mx64_1_material"/>
                 <!-- Part almi_2mm_connector_mx64_1_2 -->
-                <geom type="mesh" class="collision" pos="-0.015 0.043 0.0045" quat="0.5 0.5 0.5 0.5" mesh="almi_2mm_connector_mx64_1" material="almi_2mm_connector_mx64_1_material"/>
+                <geom type="mesh" class="collision" pos="-0.015 -0.043 -0.0045" quat="0.5 -0.5 0.5 -0.5" mesh="almi_2mm_connector_mx64_1" material="almi_2mm_connector_mx64_1_material"/>
                 <!-- Part mx_64t_3_2 -->
-                <geom type="mesh" class="collision" pos="0 0 0.0235" quat="0 1 0 0" mesh="mx_64t_3" material="mx_64t_3_material"/>
+                <geom type="mesh" class="collision" pos="0 0 -0.0235" quat="1 0 -2.22045e-16 -0" mesh="mx_64t_3" material="mx_64t_3_material"/>
                 <!-- Part almi_2mm_fr05_f101k_set_1 -->
-                <geom type="mesh" class="collision" pos="0.024 0 0.0235" quat="7.85046e-17 0.707107 -0.707107 1.10466e-28" mesh="almi_2mm_fr05_f101k_set_1" material="almi_2mm_fr05_f101k_set_1_material"/>
+                <geom type="mesh" class="collision" pos="0.024 0 -0.0235" quat="0.707107 -1.90211e-16 1.11022e-16 0.707107" mesh="almi_2mm_fr05_f101k_set_1" material="almi_2mm_fr05_f101k_set_1_material"/>
                 <!-- Part hn05_i101_2 -->
-                <geom type="mesh" class="collision" pos="4.25007e-17 0 0.04694" quat="0.707107 0.707107 -1.11022e-16 7.60514e-17" mesh="hn05_i101_2" material="hn05_i101_2_material"/>
+                <geom type="mesh" class="collision" pos="4.25007e-17 0 -0.04694" quat="0.707107 -0.707107 1.11022e-16 1.30023e-16" mesh="hn05_i101_2" material="hn05_i101_2_material"/>
                 <!-- Part mf128zz_2 -->
-                <geom type="mesh" class="collision" pos="1.82146e-17 5.55112e-17 0.04322" quat="0.707107 0.707107 -1.11022e-16 9.81308e-18" mesh="mf128zz_2" material="mf128zz_2_material"/>
+                <geom type="mesh" class="collision" pos="1.82146e-17 -5.55112e-17 -0.04322" quat="0.707107 -0.707107 -0 1.37383e-16" mesh="mf128zz_2" material="mf128zz_2_material"/>
                 <!-- Part rx64_cap_2 -->
-                <geom type="mesh" class="collision" pos="1.38778e-17 5.55112e-17 0.0467" quat="1 -0 -0 5.55112e-17" mesh="rx64_cap_2" material="rx64_cap_2_material"/>
+                <geom type="mesh" class="collision" pos="1.38778e-17 -5.55112e-17 -0.0467" quat="1.50228e-29 -1 3.46945e-17 1.17961e-16" mesh="rx64_cap_2" material="rx64_cap_2_material"/>
                 <!-- Part mf128zz_2_2 -->
-                <geom type="mesh" class="collision" pos="0.02622 4.58208e-05 0.0235" quat="7.85046e-17 -0.707107 -0.707107 7.85046e-17" mesh="mf128zz_2" material="mf128zz_2_material"/>
+                <geom type="mesh" class="collision" pos="0.02622 -4.58208e-05 -0.0235" quat="0.707107 7.6595e-17 -3.33067e-16 -0.707107" mesh="mf128zz_2" material="mf128zz_2_material"/>
                 <!-- Part hn05_i101_2_2 -->
-                <geom type="mesh" class="collision" pos="0.02994 4.58208e-05 0.0235" quat="7.85046e-17 -0.707107 -0.707107 1.57009e-16" mesh="hn05_i101_2" material="hn05_i101_2_material"/>
+                <geom type="mesh" class="collision" pos="0.02994 -4.58208e-05 -0.0235" quat="0.707107 7.85046e-17 0 -0.707107" mesh="hn05_i101_2" material="hn05_i101_2_material"/>
                 <!-- Part rx64_cap_2_2 -->
-                <geom type="mesh" class="collision" pos="0.0297 4.58208e-05 0.0235" quat="0.5 0.5 0.5 0.5" mesh="rx64_cap_2" material="rx64_cap_2_material"/>
+                <geom type="mesh" class="collision" pos="0.0297 -4.58208e-05 -0.0235" quat="0.5 -0.5 0.5 -0.5" mesh="rx64_cap_2" material="rx64_cap_2_material"/>
                 <!-- Part foot_right_4_parts -->
-                <geom type="mesh" class="visual" pos="-0.0215978 0.0144558 0.0236219" quat="0.5 -0.5 0.5 0.5" mesh="foot_right_4_visual" material="foot_right_4_visual_material"/>
+                <geom type="mesh" class="visual" pos="-0.0215978 -0.0144558 -0.0236219" quat="0.5 0.5 -0.5 0.5" mesh="foot_right_4_visual" material="foot_right_4_visual_material"/>
                 <!-- Link foot_right_5 -->
-                <body name="foot_right_5" pos="-0.02558 -4.44089e-15 0.0235" quat="0.707107 -1.79015e-14 0.707107 -1.93591e-14">
+                <body name="foot_right_5" pos="-0.02558 4.44089e-15 -0.0235" quat="1.79015e-14 0.707107 1.94289e-14 0.707107">
                   <!-- Joint from foot_right_4 to foot_right_5 -->
                   <joint axis="0 0 1" name="right_ankle_roll" type="hinge" range="-1.0471975512 1.0471975512" frictionloss="0.1"/>
                   <inertial pos="-0.00431494 -0.027932 0.0410276" mass="0.132192" fullinertia="0.000177533 0.000221544 6.06598e-05 -1.91248e-06 5.63401e-06 8.6074e-07"/>
@@ -343,83 +342,83 @@
         </body>
       </body>
       <!-- Link stainless_steel_2mm_upper_leg_bracket_mir -->
-      <body name="stainless_steel_2mm_upper_leg_bracket_mir" pos="0.0495 -0.0149156 0.0210065" quat="7.20329e-14 0.707107 -0.707107 -8.01154e-14">
+      <body name="stainless_steel_2mm_upper_leg_bracket_mir" pos="0.0495 -0.0149156 0.0210065" quat="0.707107 -7.20327e-14 8.02691e-14 -0.707107">
         <!-- Joint from torso_kidsize25 to stainless_steel_2mm_upper_leg_bracket_mir -->
-        <joint axis="0 0 1" name="left_hip_yaw" type="hinge" range="-0.7853981633974483 1.5707963267948966" frictionloss="0.1"/>
-        <inertial pos="-0.00421162 -1.80642e-07 0.00839045" mass="0.0521561" fullinertia="1.13163e-05 2.97089e-05 2.98236e-05 -2.66522e-10 2.03733e-07 -3.66542e-11"/>
+        <joint axis="0 0 1" name="left_hip_yaw" type="hinge" range="-1.5707963267948966 0.7853981633974483" frictionloss="0.1"/>
+        <inertial pos="-0.00421162 1.80642e-07 -0.00839045" mass="0.0521561" fullinertia="1.13163e-05 2.97089e-05 2.98236e-05 2.66522e-10 -2.03733e-07 -3.66542e-11"/>
         <!-- Part stainless_steel_2mm_upper_leg_bracket_mir -->
-        <geom type="mesh" class="collision" pos="-0.03298 0.016 0" quat="0 1 0 0" mesh="stainless_steel_2mm_upper_leg_bracket_mir" material="stainless_steel_2mm_upper_leg_bracket_mir_material"/>
+        <geom type="mesh" class="collision" pos="-0.03298 -0.016 0" quat="1 0 0 0" mesh="stainless_steel_2mm_upper_leg_bracket_mir" material="stainless_steel_2mm_upper_leg_bracket_mir_material"/>
         <!-- Part stainless_steel_2mm_upper_leg_bracket_mir_parts -->
-        <geom type="mesh" class="visual" pos="-0.00421162 -1.80642e-07 0.00839045" quat="7.20329e-14 -0.707107 0.707107 8.01154e-14" mesh="stainless_steel_2mm_upper_leg_bracket_mir_visual" material="stainless_steel_2mm_upper_leg_bracket_mir_visual_material"/>
+        <geom type="mesh" class="visual" pos="-0.00421162 1.80642e-07 -0.00839045" quat="0.707107 7.20329e-14 -8.01581e-14 0.707107" mesh="stainless_steel_2mm_upper_leg_bracket_mir_visual" material="stainless_steel_2mm_upper_leg_bracket_mir_visual_material"/>
         <!-- Link foot_left_1 -->
-        <body name="foot_left_1" pos="-0.0335 3.56451e-14 0.032" quat="0.5 -0.5 -0.5 0.5">
+        <body name="foot_left_1" pos="-0.0335 -3.56451e-14 -0.032" quat="0.5 -0.5 0.5 -0.5">
           <!-- Joint from stainless_steel_2mm_upper_leg_bracket_mir to foot_left_1 -->
           <joint axis="0 0 1" name="left_hip_roll" type="hinge" range="-1.5707963267948966 0.7853981633974483" frictionloss="0.1"/>
-          <inertial pos="-0.000121924 -0.0144559 -0.00398223" mass="0.292143" fullinertia="0.000302507 0.000262475 0.000112946 -1.96526e-07 -7.69256e-07 1.25975e-05"/>
+          <inertial pos="-0.000121924 0.0144559 0.00398223" mass="0.292143" fullinertia="0.000302507 0.000262475 0.000112946 1.96526e-07 7.69256e-07 1.25975e-05"/>
           <!-- Part mx_64t_mir_1 -->
-          <geom type="mesh" class="collision" pos="0 0 0.0235" quat="1 0 0 0" mesh="mx_64t_mir_1" material="mx_64t_mir_1_material"/>
+          <geom type="mesh" class="collision" pos="0 0 -0.0235" quat="0 1 0 0" mesh="mx_64t_mir_1" material="mx_64t_mir_1_material"/>
           <!-- Part almi_2mm_fr05_f101k_set_mir -->
-          <geom type="mesh" class="collision" pos="3.46945e-17 3.1225e-17 -0.04958" quat="0.5 0.5 0.5 0.5" mesh="almi_2mm_fr05_f101k_set_mir" material="almi_2mm_fr05_f101k_set_mir_material"/>
+          <geom type="mesh" class="collision" pos="3.46945e-17 -3.1225e-17 0.04958" quat="0.5 -0.5 0.5 -0.5" mesh="almi_2mm_fr05_f101k_set_mir" material="almi_2mm_fr05_f101k_set_mir_material"/>
           <!-- Part almi_2mm_connector_mx64_mir -->
-          <geom type="mesh" class="collision" pos="-0.019 -0.043 -0.01058" quat="0.707107 -3.92523e-17 -0 -0.707107" mesh="almi_2mm_connector_mx64_mir" material="almi_2mm_connector_mx64_mir_material"/>
+          <geom type="mesh" class="collision" pos="-0.019 0.043 0.01058" quat="3.92523e-17 0.707107 0.707107 -5.87371e-28" mesh="almi_2mm_connector_mx64_mir" material="almi_2mm_connector_mx64_mir_material"/>
           <!-- Part fr05_f101k_set_mir -->
-          <geom type="mesh" class="collision" pos="-2.15106e-16 -4.58208e-05 -0.04958" quat="0.707107 -9.81308e-17 1.11022e-16 -0.707107" mesh="fr05_f101k_set_mir" material="fr05_f101k_set_mir_material"/>
+          <geom type="mesh" class="collision" pos="-2.15106e-16 4.58208e-05 0.04958" quat="1.30154e-16 0.707107 0.707107 1.09524e-16" mesh="fr05_f101k_set_mir" material="fr05_f101k_set_mir_material"/>
           <!-- Part almi_2mm_connector_mx64_mir_2 -->
-          <geom type="mesh" class="collision" pos="0.019 -0.015 -0.01058" quat="0.707107 0 2.22045e-16 0.707107" mesh="almi_2mm_connector_mx64_mir" material="almi_2mm_connector_mx64_mir_material"/>
+          <geom type="mesh" class="collision" pos="0.019 0.015 0.01058" quat="9.54067e-28 0.707107 -0.707107 7.85046e-17" mesh="almi_2mm_connector_mx64_mir" material="almi_2mm_connector_mx64_mir_material"/>
           <!-- Part mx_64t_mir_1_2 -->
-          <geom type="mesh" class="collision" pos="2.77556e-17 3.29597e-17 -0.02558" quat="0.707107 2.1684e-19 -0.707107 0" mesh="mx_64t_mir_1" material="mx_64t_mir_1_material"/>
+          <geom type="mesh" class="collision" pos="2.77556e-17 -3.29597e-17 0.02558" quat="4.95655e-17 0.707107 -1.11022e-16 -0.707107" mesh="mx_64t_mir_1" material="mx_64t_mir_1_material"/>
           <!-- Part mf128zz_mir_1 -->
-          <geom type="mesh" class="collision" pos="-2.28983e-16 -4.58208e-05 -0.0518" quat="0.5 -0.5 -0.5 0.5" mesh="mf128zz_mir_1" material="mf128zz_mir_1_material"/>
+          <geom type="mesh" class="collision" pos="-2.28983e-16 4.58208e-05 0.0518" quat="0.5 0.5 -0.5 -0.5" mesh="mf128zz_mir_1" material="mf128zz_mir_1_material"/>
           <!-- Part hn05_i101_mir_1 -->
-          <geom type="mesh" class="collision" pos="-2.22045e-16 -4.58208e-05 -0.05552" quat="0.5 -0.5 -0.5 0.5" mesh="hn05_i101_mir_1" material="hn05_i101_mir_1_material"/>
+          <geom type="mesh" class="collision" pos="-2.22045e-16 4.58208e-05 0.05552" quat="0.5 0.5 -0.5 -0.5" mesh="hn05_i101_mir_1" material="hn05_i101_mir_1_material"/>
           <!-- Part rx64_cap_mir_1 -->
-          <geom type="mesh" class="collision" pos="-2.22045e-16 -4.58208e-05 -0.05528" quat="0.707107 -0 -0 0.707107" mesh="rx64_cap_mir_1" material="rx64_cap_mir_1_material"/>
+          <geom type="mesh" class="collision" pos="-2.22045e-16 4.58208e-05 0.05528" quat="3.92523e-17 -0.707107 0.707107 -7.85046e-17" mesh="rx64_cap_mir_1" material="rx64_cap_mir_1_material"/>
           <!-- Part rx64_cap_mir_1_2 -->
-          <geom type="mesh" class="collision" pos="-0.0232 -1.73472e-18 -0.02558" quat="0.5 -0.5 0.5 -0.5" mesh="rx64_cap_mir_1" material="rx64_cap_mir_1_material"/>
+          <geom type="mesh" class="collision" pos="-0.0232 1.73472e-18 0.02558" quat="0.5 0.5 0.5 0.5" mesh="rx64_cap_mir_1" material="rx64_cap_mir_1_material"/>
           <!-- Part hn05_i101_mir_1_2 -->
-          <geom type="mesh" class="collision" pos="-0.02344 -8.67362e-18 -0.02558" quat="3.92523e-17 0.707107 -0.707107 -1.30388e-27" mesh="hn05_i101_mir_1" material="hn05_i101_mir_1_material"/>
+          <geom type="mesh" class="collision" pos="-0.02344 8.67362e-18 0.02558" quat="0.707107 -3.92523e-17 -0 0.707107" mesh="hn05_i101_mir_1" material="hn05_i101_mir_1_material"/>
           <!-- Part mf128zz_mir_1_2 -->
-          <geom type="mesh" class="collision" pos="-0.01972 -1.9082e-17 -0.02558" quat="3.92523e-17 0.707107 -0.707107 1.1295e-28" mesh="mf128zz_mir_1" material="mf128zz_mir_1_material"/>
+          <geom type="mesh" class="collision" pos="-0.01972 1.9082e-17 0.02558" quat="0.707107 -3.92523e-17 -1.11022e-16 0.707107" mesh="mf128zz_mir_1" material="mf128zz_mir_1_material"/>
           <!-- Part foot_left_1_parts -->
-          <geom type="mesh" class="visual" pos="-0.000121924 -0.0144559 -0.00398223" quat="2.78646e-14 3.19231e-14 0.707107 0.707107" mesh="foot_left_1_visual" material="foot_left_1_visual_material"/>
+          <geom type="mesh" class="visual" pos="-0.000121924 0.0144559 0.00398223" quat="3.19231e-14 -2.78649e-14 0.707107 -0.707107" mesh="foot_left_1_visual" material="foot_left_1_visual_material"/>
           <!-- Link foot_left_2 -->
-          <body name="foot_left_2" pos="0.0235 -2.60209e-17 -0.02558" quat="0.707107 4.77049e-16 0.707107 5.96745e-16">
+          <body name="foot_left_2" pos="0.0235 2.60209e-17 0.02558" quat="0.707107 4.77049e-16 -0.707107 -5.96745e-16">
             <!-- Joint from foot_left_1 to foot_left_2 -->
-            <joint axis="0 0 1" name="left_hip_pitch" type="hinge" range="-1.1780972450961724 1.9634954084936207" frictionloss="0.1"/>
-            <inertial pos="0.00189202 -0.0890217 -0.0236304" mass="0.273181" fullinertia="0.00054925 0.000131243 0.000472641 -3.23354e-06 -6.73963e-08 -8.86436e-07"/>
+            <joint axis="0 0 1" name="left_hip_pitch" type="hinge" range="-1.9634954084936207 1.1780972450961724" frictionloss="0.1"/>
+            <inertial pos="0.00189202 0.0890217 0.0236304" mass="0.273181" fullinertia="0.00054925 0.000131243 0.000472641 3.23354e-06 6.73963e-08 -8.86436e-07"/>
             <!-- Part mx_64t_mir -->
-            <geom type="mesh" class="collision" pos="-6.32307e-16 -0.134 -0.0235" quat="0 1 0 0" mesh="mx_64t_mir" material="mx_64t_mir_material"/>
+            <geom type="mesh" class="collision" pos="-6.32307e-16 0.134 0.0235" quat="1 0 0 -7.80626e-17" mesh="mx_64t_mir" material="mx_64t_mir_material"/>
             <!-- Part stainless_steel_2mm__femur_mir -->
-            <geom type="mesh" class="collision" pos="-0.014 -0.07746 -0.047" quat="0.707107 -0.707107 0 3.43246e-29" mesh="stainless_steel_2mm__femur_mir" material="stainless_steel_2mm__femur_mir_material"/>
+            <geom type="mesh" class="collision" pos="-0.014 0.07746 0.047" quat="0.707107 0.707107 0 -3.48437e-29" mesh="stainless_steel_2mm__femur_mir" material="stainless_steel_2mm__femur_mir_material"/>
             <!-- Part stainless_steel_2mm__femur_mir_2 -->
-            <geom type="mesh" class="collision" pos="-0.014 -0.07746 0.003" quat="0.707107 -0.707107 0 1.93407e-32" mesh="stainless_steel_2mm__femur_mir" material="stainless_steel_2mm__femur_mir_material"/>
+            <geom type="mesh" class="collision" pos="-0.014 0.07746 -0.003" quat="0.707107 0.707107 -0 1.93407e-32" mesh="stainless_steel_2mm__femur_mir" material="stainless_steel_2mm__femur_mir_material"/>
             <!-- Part almi_6_5mm_l_mx64_mir -->
-            <geom type="mesh" class="collision" pos="-0.0134121 -0.0859 -0.0065" quat="9.96256e-31 0 -0.707107 -0.707107" mesh="almi_6_5mm_l_mx64_mir" material="almi_6_5mm_l_mx64_mir_material"/>
+            <geom type="mesh" class="collision" pos="-0.0134121 0.0859 0.0065" quat="1.2809e-30 0 -0.707107 0.707107" mesh="almi_6_5mm_l_mx64_mir" material="almi_6_5mm_l_mx64_mir_material"/>
             <!-- Part almi_6_5mm_l_mx64_mir_2 -->
-            <geom type="mesh" class="collision" pos="-0.0134121 -0.0859 -0.047" quat="3.34314e-29 0 -0.707107 -0.707107" mesh="almi_6_5mm_l_mx64_mir" material="almi_6_5mm_l_mx64_mir_material"/>
+            <geom type="mesh" class="collision" pos="-0.0134121 0.0859 0.047" quat="3.34314e-29 -0 -0.707107 0.707107" mesh="almi_6_5mm_l_mx64_mir" material="almi_6_5mm_l_mx64_mir_material"/>
             <!-- Part hn05_i101_mir -->
-            <geom type="mesh" class="collision" pos="-6.54858e-16 -0.134 -0.04694" quat="0.5 -0.5 0.5 -0.5" mesh="hn05_i101_mir" material="hn05_i101_mir_material"/>
+            <geom type="mesh" class="collision" pos="-6.54858e-16 0.134 0.04694" quat="0.5 0.5 0.5 0.5" mesh="hn05_i101_mir" material="hn05_i101_mir_material"/>
             <!-- Part rx64_cap_mir -->
-            <geom type="mesh" class="collision" pos="-6.21898e-16 -0.134 -0.0467" quat="0.707107 -3.92523e-17 1.11022e-16 -0.707107" mesh="rx64_cap_mir" material="rx64_cap_mir_material"/>
+            <geom type="mesh" class="collision" pos="-6.21898e-16 0.134 0.0467" quat="3.82868e-17 0.707107 0.707107 -1.10957e-16" mesh="rx64_cap_mir" material="rx64_cap_mir_material"/>
             <!-- Part mf128zz_mir -->
-            <geom type="mesh" class="collision" pos="-6.34041e-16 -0.134 -0.04322" quat="0.5 -0.5 0.5 -0.5" mesh="mf128zz_mir" material="mf128zz_mir_material"/>
+            <geom type="mesh" class="collision" pos="-6.34041e-16 0.134 0.04322" quat="0.5 0.5 0.5 0.5" mesh="mf128zz_mir" material="mf128zz_mir_material"/>
             <!-- Part foot_left_2_parts -->
-            <geom type="mesh" class="visual" pos="0.00189202 -0.0890217 -0.0236304" quat="0.5 -0.5 0.5 0.5" mesh="foot_left_2_visual" material="foot_left_2_visual_material"/>
+            <geom type="mesh" class="visual" pos="0.00189202 0.0890217 0.0236304" quat="0.5 0.5 -0.5 0.5" mesh="foot_left_2_visual" material="foot_left_2_visual_material"/>
             <!-- Link foot_left_3 -->
-            <body name="foot_left_3" pos="-6.42715e-16 -0.134 4.16334e-17" quat="1 -0 -0 -2.9319e-15">
+            <body name="foot_left_3" pos="-6.42715e-16 0.134 -4.16334e-17" quat="1 -0 -0 2.9319e-15">
               <!-- Joint from foot_left_2 to foot_left_3 -->
-              <joint axis="0 0 1" name="left_knee" type="hinge" range="-0.7853981633974483 0.7853981633974483" frictionloss="0.1"/>
-              <inertial pos="0.00350206 -0.0535427 -0.0235017" mass="0.157154" fullinertia="0.000266743 0.000115972 0.000200186 -8.33375e-06 5.26492e-09 6.48605e-09"/>
+              <joint axis="0 0 1" name="left_knee" type="hinge" range="-2.356194490192345 2.356194490192345" frictionloss="0.1"/>
+              <inertial pos="0.00350206 0.0535427 0.0235017" mass="0.157154" fullinertia="0.000266743 0.000115972 0.000200186 8.33375e-06 -5.26492e-09 6.48605e-09"/>
               <!-- Part stainless_steel_2mm_shinebone_mir -->
-              <geom type="mesh" class="collision" pos="0.0135 -0.0197269 -0.05" quat="0.707107 0.707107 -2.22045e-16 1.5782e-16" mesh="stainless_steel_2mm_shinebone_mir" material="stainless_steel_2mm_shinebone_mir_material"/>
+              <geom type="mesh" class="collision" pos="0.0135 0.0197269 0.05" quat="0.707107 -0.707107 1.11022e-16 1.57009e-16" mesh="stainless_steel_2mm_shinebone_mir" material="stainless_steel_2mm_shinebone_mir_material"/>
               <!-- Part stainless_steel_2mm_leg_spacer_mir -->
-              <geom type="mesh" class="collision" pos="0.024 -0.0190814 -0.045" quat="3.92523e-17 0.707107 -0.707107 1.06629e-27" mesh="stainless_steel_2mm_leg_spacer_mir" material="stainless_steel_2mm_leg_spacer_mir_material"/>
+              <geom type="mesh" class="collision" pos="0.024 0.0190814 0.045" quat="0.707107 -3.92523e-17 -0 0.707107" mesh="stainless_steel_2mm_leg_spacer_mir" material="stainless_steel_2mm_leg_spacer_mir_material"/>
               <!-- Part stainless_steel_2mm_shinebone_mir_2 -->
-              <geom type="mesh" class="collision" pos="0.0135 -0.0197269 0" quat="0.707107 0.707107 -0 1.24399e-31" mesh="stainless_steel_2mm_shinebone_mir" material="stainless_steel_2mm_shinebone_mir_material"/>
+              <geom type="mesh" class="collision" pos="0.0135 0.0197269 0" quat="0.707107 -0.707107 0 1.24399e-31" mesh="stainless_steel_2mm_shinebone_mir" material="stainless_steel_2mm_shinebone_mir_material"/>
               <!-- Part foot_left_3_parts -->
-              <geom type="mesh" class="visual" pos="0.00350206 -0.0535427 -0.0235017" quat="0.5 -0.5 0.5 0.5" mesh="foot_left_3_visual" material="foot_left_3_visual_material"/>
+              <geom type="mesh" class="visual" pos="0.00350206 0.0535427 0.0235017" quat="0.5 0.5 -0.5 0.5" mesh="foot_left_3_visual" material="foot_left_3_visual_material"/>
               <!-- Link foot_left_4 -->
-              <body name="foot_left_4" pos="-8.67362e-17 -0.111702 -6.59195e-17" quat="1.08893e-28 1 -5.82867e-16 3.56368e-31">
+              <body name="foot_left_4" pos="-8.67362e-17 0.111702 6.59195e-17" quat="1 0 -5.55112e-17 6.0531e-16">
                 <!-- Joint from foot_left_3 to foot_left_4 -->
                 <joint axis="0 0 1" name="left_ankle_pitch" type="hinge" range="-1.5707963267948966 1.5707963267948966" frictionloss="0.1"/>
                 <inertial pos="-0.0215978 -0.0144559 0.0236219" mass="0.292143" fullinertia="0.000112946 0.000262475 0.000302507 -1.25975e-05 -7.69402e-07 2.05066e-07"/>
@@ -471,123 +470,123 @@
     </body>
   </worldbody>
   <asset>
-    <mesh file="stainless_steel_2mm_shinebone_mir.stl"/>
-    <mesh file="upper_floor.stl"/>
-    <mesh file="mx_64t_3.stl"/>
-    <mesh file="almi_5mm_bracket_servo_1_2.stl"/>
-    <mesh file="merged/almi2_view_6_7__arm_bracket_2_visual.stl"/>
-    <mesh file="merged/foot_left_4_visual.stl"/>
-    <mesh file="almi_2mm_lower_leg.stl"/>
-    <mesh file="merged/foot_right_3_visual.stl"/>
-    <mesh file="front_upper_bumper.stl"/>
-    <mesh file="stainless_steel_2mm_shinebone.stl"/>
-    <mesh file="carbon_2mm_arm_kidsize_1.stl"/>
-    <mesh file="merged/foot_left_5_visual.stl"/>
-    <mesh file="2nd_floor.stl"/>
-    <mesh file="stainless_steel_2mm_lower_leg_bracket_mir.stl"/>
-    <mesh file="fr05_f101k_set_mir_1.stl"/>
-    <mesh file="bumper_front_lower.stl"/>
-    <mesh file="almi2_view_13__14__arm.stl"/>
-    <mesh file="back_bumper.stl"/>
-    <mesh file="rx64_cap.stl"/>
-    <mesh file="stainless_steel_2mm_lower_leg_bracket.stl"/>
-    <mesh file="xt_bracket.stl"/>
-    <mesh file="fr05_f101k_set_mir.stl"/>
-    <mesh file="stainless_steel_2mm_leg_spacer.stl"/>
-    <mesh file="mf128zz_mir_1.stl"/>
-    <mesh file="almi_2mm_floor_2nd__1.stl"/>
-    <mesh file="stainless_steel_2mm_upper_leg_bracket_mir.stl"/>
-    <mesh file="petg_5_19_mx28_seating.stl"/>
-    <mesh file="merged/stainless_steel_2mm_upper_leg_bracket_mir_visual.stl"/>
-    <mesh file="handle.stl"/>
-    <mesh file="merged/head_visual.stl"/>
-    <mesh file="almi_2mm_connector_mx64_mir_1.stl"/>
-    <mesh file="merged/foot_right_5_visual.stl"/>
-    <mesh file="mx_64t_mir1.stl"/>
-    <mesh file="bracket_back_bumper_mir.stl"/>
-    <mesh file="merged/stainless_steel_2mm_upper_leg_bracket_visual.stl"/>
-    <mesh file="almi_5mm_bracket_servo_1_2_left.stl"/>
-    <mesh file="stainless_steel_2mm__femur_mir.stl"/>
-    <mesh file="merged/foot_left_1_visual.stl"/>
-    <mesh file="handler_holder_siber.stl"/>
-    <mesh file="almi2_view_6_7__arm_bracket.stl"/>
-    <mesh file="stainless_steel_2mm__femur.stl"/>
-    <mesh file="rx64_cap_mir.stl"/>
-    <mesh file="rx64_cap_mir_2.stl"/>
-    <mesh file="pla_50__shoes.stl"/>
-    <mesh file="stainless_steel_2mm_upper_leg_bracket.stl"/>
-    <mesh file="mx_64t_2.stl"/>
-    <mesh file="camera_logitech_c920_offset_2mm.stl"/>
-    <mesh file="mf128zz_mir_2.stl"/>
     <mesh file="petg_2mm_headbracket_old.stl"/>
-    <mesh file="handle_bracket_kidsize.stl"/>
-    <mesh file="merged/neck_visual.stl"/>
-    <mesh file="bracket_1_2_lower.stl"/>
-    <mesh file="mx_64t_mir_1.stl"/>
-    <mesh file="hn05_i101_mir_1.stl"/>
-    <mesh file="almi_2mm_fr05_f101k_set_mir.stl"/>
-    <mesh file="hn05_i101_1.stl"/>
-    <mesh file="merged/left_lowerhand_visual.stl"/>
-    <mesh file="merged/left_upperhand_visual.stl"/>
-    <mesh file="carbon_2mm_arm_kidsize_2.stl"/>
-    <mesh file="tpu_arm_kidsize_telapak.stl"/>
+    <mesh file="bracket_back_bumper_mir.stl"/>
+    <mesh file="merged/foot_left_3_visual.stl"/>
+    <mesh file="mf128zz_mir_2.stl"/>
+    <mesh file="rx64_cap_2.stl"/>
+    <mesh file="mx_64t_3.stl"/>
+    <mesh file="stainless_steel_2mm_lower_leg_bracket_mir.stl"/>
+    <mesh file="rx64_cap_1.stl"/>
+    <mesh file="hn05_i101_mir_2.stl"/>
+    <mesh file="fr05_f101k_set_mir.stl"/>
+    <mesh file="holder_lower_bracket_mir.stl"/>
     <mesh file="spacer_106_64_mir2_mir.stl"/>
-    <mesh file="merged/right_upperhand_visual.stl"/>
-    <mesh file="almi_2mm_connector_mx64_1.stl"/>
-    <mesh file="mx_64t_1.stl"/>
-    <mesh file="hn05_i101_mir.stl"/>
+    <mesh file="almi_5mm_bracket_servo_1_2.stl"/>
+    <mesh file="fr05_f101k_set.stl"/>
+    <mesh file="merged/foot_left_4_visual.stl"/>
+    <mesh file="almi_2mm_fr05_f101k_set_mir.stl"/>
     <mesh file="front_upper_bumper_mir.stl"/>
-    <mesh file="almi_2mm_connector_mx64_mir.stl"/>
-    <mesh file="mf128zz.stl"/>
-    <mesh file="almi_2mm_fr05_f101k_set_1.stl"/>
-    <mesh file="almi_6_5mm_l_mx64_mir.stl"/>
-    <mesh file="almi_6_5mm_l_mx64.stl"/>
-    <mesh file="battery_holder.stl"/>
-    <mesh file="hn05_i101_2.stl"/>
-    <mesh file="merged/almi2_view_6_7__arm_bracket_visual.stl"/>
-    <mesh file="camera_frame.stl"/>
-    <mesh file="mx_64t_mir.stl"/>
-    <mesh file="merged/foot_left_2_visual.stl"/>
-    <mesh file="pla_50__shoes_mir.stl"/>
     <mesh file="almi_2mm_lower_leg_mir.stl"/>
-    <mesh file="bracket_1_2_lower_left.stl"/>
-    <mesh file="holder_lower_bracket.stl"/>
+    <mesh file="stainless_steel_2mm_upper_leg_bracket.stl"/>
+    <mesh file="almi_6_5mm_l_mx64.stl"/>
     <mesh file="mf128zz_2.stl"/>
+    <mesh file="merged/right_upperhand_visual.stl"/>
+    <mesh file="hn05_i101_mir.stl"/>
+    <mesh file="merged/left_upperhand_visual.stl"/>
     <mesh file="spacer_106_64_mir2.stl"/>
-    <mesh file="spacer_bracket_id_1_19_2_mir.stl"/>
-    <mesh file="bracket_back_bumper.stl"/>
+    <mesh file="merged/foot_left_2_visual.stl"/>
+    <mesh file="almi_2mm_connector_mx64.stl"/>
+    <mesh file="camera_frame.stl"/>
+    <mesh file="almi_2mm_connector_mx64_mir.stl"/>
+    <mesh file="mx_64t.stl"/>
     <mesh file="fr05_f101k_set_1.stl"/>
-    <mesh file="almi_2mm_fr05_f101k_set.stl"/>
-    <mesh file="holder_bumper_upper.stl"/>
-    <mesh file="almi_2mm_fr05_f101k_set_mir_1.stl"/>
+    <mesh file="rx64_cap.stl"/>
+    <mesh file="stainless_steel_2mm_shinebone_mir.stl"/>
     <mesh file="almi_4mm_neck_bracket.stl"/>
-    <mesh file="mf128zz_mir.stl"/>
+    <mesh file="mf128zz_mir_1.stl"/>
+    <mesh file="stainless_steel_2mm_lower_leg_bracket.stl"/>
+    <mesh file="mx_64t_mir.stl"/>
+    <mesh file="handler_holder_siber.stl"/>
+    <mesh file="merged/foot_right_2_visual.stl"/>
     <mesh file="merged/torso_kidsize25_visual.stl"/>
     <mesh file="merged/foot_right_4_visual.stl"/>
-    <mesh file="rx64_cap_mir_1.stl"/>
-    <mesh file="bumper_front_lower_mir.stl"/>
+    <mesh file="almi_2mm_fr05_f101k_set_mir_1.stl"/>
+    <mesh file="carbon_2mm_arm_kidsize_1.stl"/>
+    <mesh file="front_pillar.stl"/>
+    <mesh file="almi_2mm_floor_2nd__1.stl"/>
+    <mesh file="mf128zz_mir.stl"/>
+    <mesh file="merged/neck_visual.stl"/>
+    <mesh file="almi_6_5mm_l_mx64_mir.stl"/>
+    <mesh file="front_upper_bumper.stl"/>
+    <mesh file="tpu_arm_kidsize_telapak.stl"/>
+    <mesh file="bracket_back_bumper.stl"/>
     <mesh file="stainless_steel_2mm_leg_spacer_mir.stl"/>
     <mesh file="petg_2mm_rotatingheadbracket.stl"/>
-    <mesh file="pcnel_exch.stl"/>
-    <mesh file="merged/foot_right_2_visual.stl"/>
-    <mesh file="mx_64t_mir_2.stl"/>
-    <mesh file="fr05_f101k_set.stl"/>
-    <mesh file="almi_4_5mm_connector_lower_arm_kidsize.stl"/>
-    <mesh file="mx_64t.stl"/>
-    <mesh file="holder_lower_bracket_mir.stl"/>
-    <mesh file="rx64_cap_1.stl"/>
-    <mesh file="merged/right_lowerhand_visual.stl"/>
-    <mesh file="front_pillar.stl"/>
-    <mesh file="rx64_cap_2.stl"/>
-    <mesh file="hn05_i101_mir_2.stl"/>
+    <mesh file="merged/left_lowerhand_visual.stl"/>
+    <mesh file="bumper_front_lower_mir.stl"/>
+    <mesh file="mf128zz.stl"/>
+    <mesh file="hn05_i101_1.stl"/>
+    <mesh file="petg_5_19_mx28_seating.stl"/>
+    <mesh file="upper_floor.stl"/>
     <mesh file="spacer_bracket_id_1_19_2.stl"/>
-    <mesh file="mx_28.stl"/>
+    <mesh file="bumper_front_lower.stl"/>
+    <mesh file="2nd_floor.stl"/>
+    <mesh file="merged/right_lowerhand_visual.stl"/>
+    <mesh file="almi_2mm_fr05_f101k_set_1.stl"/>
+    <mesh file="almi2_view_6_7__arm_bracket.stl"/>
+    <mesh file="mx_64t_1.stl"/>
+    <mesh file="bracket_1_2_lower_left.stl"/>
+    <mesh file="camera_logitech_c920_offset_2mm.stl"/>
+    <mesh file="almi_2mm_lower_leg.stl"/>
+    <mesh file="stainless_steel_2mm__femur_mir.stl"/>
+    <mesh file="mx_64t_mir_2.stl"/>
+    <mesh file="fr05_f101k_set_mir_1.stl"/>
+    <mesh file="merged/foot_left_5_visual.stl"/>
+    <mesh file="merged/foot_left_1_visual.stl"/>
+    <mesh file="handle_bracket_kidsize.stl"/>
+    <mesh file="pla_50__shoes.stl"/>
     <mesh file="mf128zz_1.stl"/>
-    <mesh file="almi_2mm_connector_mx64.stl"/>
+    <mesh file="merged/stainless_steel_2mm_upper_leg_bracket_mir_visual.stl"/>
+    <mesh file="stainless_steel_2mm_upper_leg_bracket_mir.stl"/>
+    <mesh file="merged/foot_right_5_visual.stl"/>
+    <mesh file="merged/almi2_view_6_7__arm_bracket_2_visual.stl"/>
+    <mesh file="carbon_2mm_arm_kidsize_2.stl"/>
+    <mesh file="almi_2mm_connector_mx64_1.stl"/>
+    <mesh file="merged/foot_right_3_visual.stl"/>
     <mesh file="carbon_2mm_neck_side_plate.stl"/>
+    <mesh file="stainless_steel_2mm_shinebone.stl"/>
+    <mesh file="merged/almi2_view_6_7__arm_bracket_visual.stl"/>
+    <mesh file="almi_5mm_bracket_servo_1_2_left.stl"/>
+    <mesh file="mx_64t_2.stl"/>
+    <mesh file="mx_64t_mir_1.stl"/>
+    <mesh file="hn05_i101_mir_1.stl"/>
+    <mesh file="stainless_steel_2mm__femur.stl"/>
+    <mesh file="merged/head_visual.stl"/>
     <mesh file="merged/foot_right_1_visual.stl"/>
+    <mesh file="holder_bumper_upper.stl"/>
     <mesh file="hn05_i101.stl"/>
-    <mesh file="merged/foot_left_3_visual.stl"/>
+    <mesh file="mx_64t_mir1.stl"/>
+    <mesh file="spacer_bracket_id_1_19_2_mir.stl"/>
+    <mesh file="back_bumper.stl"/>
+    <mesh file="pla_50__shoes_mir.stl"/>
+    <mesh file="bracket_1_2_lower.stl"/>
+    <mesh file="almi_4_5mm_connector_lower_arm_kidsize.stl"/>
+    <mesh file="almi_2mm_fr05_f101k_set.stl"/>
+    <mesh file="battery_holder.stl"/>
+    <mesh file="rx64_cap_mir_1.stl"/>
+    <mesh file="rx64_cap_mir_2.stl"/>
+    <mesh file="hn05_i101_2.stl"/>
+    <mesh file="pcnel_exch.stl"/>
+    <mesh file="almi_2mm_connector_mx64_mir_1.stl"/>
+    <mesh file="stainless_steel_2mm_leg_spacer.stl"/>
+    <mesh file="handle.stl"/>
+    <mesh file="mx_28.stl"/>
+    <mesh file="holder_lower_bracket.stl"/>
+    <mesh file="almi2_view_13__14__arm.stl"/>
+    <mesh file="merged/stainless_steel_2mm_upper_leg_bracket_visual.stl"/>
+    <mesh file="rx64_cap_mir.stl"/>
+    <mesh file="xt_bracket.stl"/>
     <material name="mx_64t_mir1_material" rgba="0.55972 0.560028 0.558638 1"/>
     <material name="mx_64t_material" rgba="0.55972 0.560028 0.558638 1"/>
     <material name="mx_28_material" rgba="0.55972 0.560028 0.558638 1"/>
