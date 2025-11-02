@@ -399,7 +399,7 @@
     </visual>
   </link>
   <!-- Joint from neck to head -->
-  <joint name="neck_pitch" type="revolute">
+  <joint name="head_pitch" type="revolute">
     <origin xyz="5e-07 -0.0205 0.037" rpy="-1.5708 -1.5708 0"/>
     <parent link="neck"/>
     <child link="head"/>
@@ -408,7 +408,7 @@
     <joint_properties friction="0.1"/>
   </joint>
   <!-- Joint from torso_kidsize25 to neck -->
-  <joint name="neck_yaw" type="revolute">
+  <joint name="head_yaw" type="revolute">
     <origin xyz="8.67185e-05 -0.0446832 0.184707" rpy="2.15281e-13 -1.12084e-14 1.5708"/>
     <parent link="torso_kidsize25"/>
     <child link="neck"/>
@@ -1559,5 +1559,61 @@
     <axis xyz="0 0 1"/>
     <limit effort="6" velocity="6.6" lower="-1.5708" upper="0.785398"/>
     <joint_properties friction="0.1"/>
+  </joint>
+  <!-- FRAME: RIGHT FOOT -->
+  <link name="right_foot">
+    <visual>
+      <geometry><sphere radius="0.01"/></geometry>
+      <material name="grey"><color rgba="0.5 0.5 0.5 1"/></material>
+    </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="right_foot_frame" type="revolute">
+    <origin xyz="0.0 -0.032 0.03" rpy="0 -1.5708 -1.5708"/>
+    <parent link="foot_right_5"/>
+    <child link="right_foot"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="0.0" velocity="0.0" lower="0.0" upper="0.0"/>
+  </joint>
+  <!-- FRAME: LEFT FOOT -->
+  <link name="left_foot">
+    <visual>
+      <geometry><sphere radius="0.01"/></geometry>
+      <material name="grey"><color rgba="0.5 0.5 0.5 1"/></material>
+    </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="left_foot_frame" type="revolute">
+    <origin xyz="0.0 0.032 0.03" rpy="0 -1.5708 1.5708"/>
+    <parent link="foot_left_5"/>
+    <child link="left_foot"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="0.0" velocity="0.0" lower="0.0" upper="0.0"/>
+  </joint>
+  <!-- FRAME: TRUNK -->
+  <link name="trunk">
+    <visual>
+      <geometry><sphere radius="0.01"/></geometry>
+      <material name="grey"><color rgba="0.5 0.5 0.5 1"/></material>
+    </visual>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="trunk_frame" type="fixed">
+    <origin xyz="0.0 0.0 0.02" rpy="0 0 -1.5708"/>
+    <parent link="torso_kidsize25"/>
+    <child link="trunk"/>
+    <axis xyz="0 0 1"/>
   </joint>
 </robot>
